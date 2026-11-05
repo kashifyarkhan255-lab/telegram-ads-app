@@ -1,1 +1,41 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Telegram Ads App</title>
+
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="https://cdn.adexium.tech/assets/js/tg-ads-co-widget.min.js"></script>
+
+<style>
+body {
+  background: #f1f5f9;
+  font-family: Arial;
+  text-align: center;
+  padding: 40px 15px;
+}
+h2 { color: #1686d9; }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const ads = new AdexiumWidget({
+    wid: '72296536-dc61-4e0a-bb46-017bc9502d93',
+    adFormat: 'interstitial',
+    debug: true
+  });
+
+  ads.autoMode();
+});
+</script>
+</head>
+
+<body>
+<h2>Welcome to My Ads App</h2>
+<p>Welcome to our Telegram Mini App!</p>
+<p>Thank you for visiting.</p>
+</body>
+</html>
+
